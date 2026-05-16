@@ -1,0 +1,17 @@
+description: "Resume Shortlisting Prompt Tests"
+
+prompts:
+  - "Will this candidate be shortlisted based on experience {{experience}}, skills {{skills}}, projects {{projects}}?"
+
+providers:
+  - id: echo
+
+tests:
+  - vars:
+      experience: 3
+      skills: 7
+      projects: 2
+  - vars:
+      experience: 1
+      skills: 2
+      projects: 1

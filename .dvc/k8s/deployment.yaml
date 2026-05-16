@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: resume-mlops-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: resume-api
+  template:
+    metadata:
+      labels:
+        app: resume-api
+    spec:
+      containers:
+      - name: resume-api
+        image: resume-mlops-api
+        ports:
+        - containerPort: 8000
