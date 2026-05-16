@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: marquez
+      POSTGRES_PASSWORD: marquez
+      POSTGRES_DB: marquez
+    ports:
+      - "5432:5432"
+
+  marquez:
+    image: marquezproject/marquez:latest
+    depends_on:
+      - postgres
+    environment:
+      MARQUEZ_CONFIG: /app/marquez.yml
+    volumes:
+      - ./marquez.yml:/app/marquez.yml
+    ports:
+      - "5000:5000"
+      - "5001:5001"
