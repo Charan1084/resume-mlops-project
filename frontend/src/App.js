@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div style={{ padding: "40px", fontFamily: "Arial" }}>
-      <h1>🚀 Resume Shortlisting MLOps System</h1>
+      <h1>1 Resume Shortlisting MLOps System</h1>
 
       <div style={{ marginTop: "20px" }}>
         <input
