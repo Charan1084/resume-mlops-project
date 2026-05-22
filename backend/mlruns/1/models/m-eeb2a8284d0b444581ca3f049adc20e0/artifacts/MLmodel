@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/Dell/Downloads/resume-mlops-project/backend/mlruns/1/models/m-eeb2a8284d0b444581ca3f049adc20e0/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.14.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.12.0
+model_id: m-eeb2a8284d0b444581ca3f049adc20e0
+model_size_bytes: 305857
+model_uuid: m-eeb2a8284d0b444581ca3f049adc20e0
+prompts: null
+run_id: b1e58cb87a2a4bf69149a8576ec76e3c
+utc_time_created: '2026-05-22 08:25:53.151734'
